@@ -1,33 +1,34 @@
 openapi: 3.0.4
 info:
   title: Never Have I Ever
-  description: Never Have I Ever generates random statements for the popular party game. Features 330+ unique prompts with per-API-key tracking to avoid repeats.
+  description: >-
+    Never Have I Ever generates random statements for the popular party game.
+    Features 330+ unique prompts with per-API-key tracking to avoid repeats.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/neverhaveiever:
     get:
       summary: Generate Statement
-      description: Never Have I Ever generates random statements for the popular party game. Features 330+ unique prompts with per-API-key tracking to avoid repeats.
+      description: Generate a Never Have I Ever statement
       operationId: neverhaveiever
       parameters:
-      - name: adult
-        default: false
-        in: query
-        schema:
-          type: boolean
-        required: false
-        description: Include adult/relationship-focused statements
-        example: false
+        - name: adult
+          in: query
+          schema:
+            type: boolean
+          required: false
+          description: Include adult/relationship-focused statements
+          example: false
       responses:
         '200':
           description: Successful Response
@@ -43,19 +44,19 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
-                  statement: Never have I ever forgotten where I parked my car.
+                  statement: Never have I ever learned to knit or crochet.
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -63,4 +64,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
