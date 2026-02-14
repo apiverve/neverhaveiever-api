@@ -17,14 +17,11 @@ def call_neverhaveiever_api():
     Make a GET request to the Never Have I Ever API
     """
     try:
-        # Query parameters
-        params &#x3D; {&#x27;adult&#x27;: false}
-
         headers = {
             'x-api-key': API_KEY
         }
 
-        response = requests.get(API_URL, headers=headers, params=params)
+        response = requests.get(API_URL, headers=headers)
 
         # Raise exception for HTTP errors
         response.raise_for_status()
