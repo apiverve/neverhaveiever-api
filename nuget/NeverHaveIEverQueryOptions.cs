@@ -12,7 +12,6 @@ namespace APIVerve.API.NeverHaveIEver
     {
         /// <summary>
         /// Include adult/relationship-focused statements
-        /// Example: false
         /// </summary>
         [JsonProperty("adult")]
         public string Adult { get; set; }
