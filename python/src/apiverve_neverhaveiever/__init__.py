@@ -1,1 +1,3 @@
-from .apiClient import NeverhaveieverAPIClient
+from .apiClient import NeverhaveieverAPIClient, NeverhaveieverAPIClientError
+
+__all__ = ['NeverhaveieverAPIClient', 'NeverhaveieverAPIClientError']
