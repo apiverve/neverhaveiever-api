@@ -122,7 +122,7 @@ async function makeRequest() {
   "status": "ok",
   "error": null,
   "data": {
-    "statement": "Never have I ever forgotten where I parked my car."
+    "statement": "Never have I ever learned to knit or crochet."
   }
 }
 ```
