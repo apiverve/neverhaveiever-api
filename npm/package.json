@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/neverhaveiever",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "description": "Never Have I Ever generates random statements for the popular party game. Features 330+ unique prompts with per-API-key tracking to avoid repeats.",
   "main": "index.js",
   "types": "index.d.ts",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/neverhaveiever-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/neverhaveiever?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/neverhaveiever?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
