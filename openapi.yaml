@@ -18,7 +18,7 @@ servers:
 paths:
   /v1/neverhaveiever:
     get:
-      summary: Generate Statement
+      summary: Never Have I Ever
       description: Generate a Never Have I Ever statement
       operationId: neverhaveiever
       parameters:
