@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/neverhaveiever",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Never Have I Ever generates random statements for the popular party game. Features 330+ unique prompts with per-API-key tracking to avoid repeats.",
   "main": "index.js",
   "types": "index.d.ts",
