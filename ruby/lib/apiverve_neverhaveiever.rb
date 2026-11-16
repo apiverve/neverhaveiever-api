@@ -4,6 +4,6 @@ require_relative "apiverve_neverhaveiever/client"
 
 module APIVerve
   module Neverhaveiever
-    VERSION = "1.2.5"
+    VERSION = "1.2.6"
   end
 end
